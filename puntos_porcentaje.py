@@ -35,7 +35,6 @@ def puntos_porcentaje(valor_real: int, valor_predicho: int, p_suma: int = 0.8, p
     >>> puntos_porcentaje(40, 60)
     53
     '''
-    
     parte_positiva = (abs(valor_real - valor_predicho)/valor_real) * p_suma
     parte_negativa = ((valor_real - valor_predicho)/valor_real) * p_resta
     

@@ -1,9 +1,11 @@
-def puntos_tops(valor_real: list[bool], cantidad) -> int:
+def puntos_tops(valor_real: list[bool], cantidad: int) -> int:
     '''
     Función que dada la lista con los booleanos que indican, en orden 
     respectivo, si se ha acertado el orden en un top, y la cantidad de 
     elementos predicha que sí están presentes en el top, devuelve la cantidad 
     de puntos obtenidos.
+    La puntuación máxima obtenible es 138
+    La puntuación mínima obtenible es 0
     
     Parameters
     ----------
