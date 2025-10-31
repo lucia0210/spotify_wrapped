@@ -1,0 +1,23 @@
+{
+  "routes": [
+    {
+      "route": "/.auth/login/google",
+      "statusCode": 302
+    },
+    {
+      "route": "/",
+      "allowedRoles": ["authenticated"]
+    }
+  ],
+  "auth": {
+    "identityProviders": {
+      "google": {
+        "registration": {
+          "clientIdSettingName": "GOOGLE_CLIENT_ID",
+          "clientSecretSettingName": "GOOGLE_CLIENT_SECRET"
+        }
+      }
+    }
+  }
+}
+
